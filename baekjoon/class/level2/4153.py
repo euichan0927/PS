@@ -9,10 +9,6 @@ while(1):
         break
     nmax=max(nlist)
     nlist.remove(nmax)
-    print(nlist[0])
-    print(nlist[1])
-    print(nlist[0]**2)
-   
 
     if(nmax**2 == ((nlist[0]**2) + (nlist[1]**2))):
         print("right")
