@@ -12,6 +12,3 @@ for i in range(m):
         print(c[mlist[i]], end=' ')
     else:
         print(0,end=' ')
-
-
-print(c)
