@@ -1,0 +1,16 @@
+import sys
+input= sys.stdin.readline
+n,m = map(int,input().split())
+
+nlist=dict()
+flist=[]
+result=[]
+for i in range(n):
+    site,key = map(str,input().split())
+    nlist[site]=key
+
+for i in range(m):
+    site=input().rstrip()
+    flist.append(site)
+for i in range(len(flist)):
+    print(nlist[flist[i]])

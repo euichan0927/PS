@@ -20,7 +20,7 @@ for i in range(m):
         else:
             nlist.add(command[1])
     elif("all" in command):
-        nlist==all_set.copy()
+        nlist=all_set.copy()
         
     elif("empty" in command):
         nlist=set()
