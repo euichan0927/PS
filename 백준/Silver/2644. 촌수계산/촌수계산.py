@@ -16,13 +16,11 @@ def dfs(x,y,count):
     visited[x]=1
     if(x==y):
         flag=True
-        return count
+        print(count)
     for i in range(1,n+1):
         if(graph[x][i]==1 and visited[i]==0):
-            result=dfs(i,y,count+1)
-            if result!= -1:
-                return result
-    return -1
-
-result=dfs(x,y,0)
-print(result)
+            dfs(i,y,count+1)
+flag=False
+dfs(x,y,0)
+if(flag==False):
+    print(-1)
